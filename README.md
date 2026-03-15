@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# iSH Educational — Apprendre Linux sur iPad Pro M4
 
-## Getting Started
+Un site éducatif complet pour découvrir et maîtriser **iSH Shell** sur iPadOS, conçu comme un vrai parcours d'apprentissage.
 
-First, run the development server:
+## 🚀 Stack technique
+
+- **Next.js 16** (App Router)
+- **TypeScript**
+- **Tailwind CSS 4**
+
+## 📚 Pages
+
+| Route | Description |
+|-------|-------------|
+| `/` | Accueil — Hero, terminal mockup, aperçu des leçons |
+| `/decouvrir` | Comprendre iSH — Ce qu'il fait, ses limites |
+| `/lecons` | 12 leçons en 3 niveaux (Débutant → Avancé) |
+| `/exercices` | 8 exercices pratiques avec solutions |
+| `/usages` | Cas d'usage sur iPad |
+| `/ipad-pro` | Spécificités iPad Pro M4 |
+| `/droits-utilisateurs` | RBAC : 5 rôles et matrice des permissions |
+| `/aide` | FAQ et aide |
+| `/blog` | Blog et actualités |
+| `/tableau-de-bord` | Tableau de bord utilisateur |
+
+## 🎨 Design
+
+- Thème sombre inspiré du terminal
+- Accent bleu électrique (`#3b82f6`) et vert terminal (`#10b981`)
+- iPad-first (11" et 13"), tactile + clavier + trackpad
+- Compatible Safari iPadOS
+
+## 🏃 Démarrage
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Ouvrir [http://localhost:3000](http://localhost:3000) dans Safari sur iPad ou navigateur.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🔐 Rôles utilisateurs
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+| Rôle | Accès |
+|------|-------|
+| Visiteur | Pages publiques |
+| Membre | Compte, progression, favoris |
+| Apprenant | Exercices, quiz, corrigés |
+| Formateur | Créer leçons & exercices |
+| Administrateur | Accès complet |
